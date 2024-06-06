@@ -1,0 +1,15 @@
+﻿<Window x:Class="Videopřehrávač.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Videopřehrávač"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu/>
+        <MediaElement LoadedBehavior="Manual" Source="C:\Users\daniel.kadlec\Desktop\Educhempromo.mp4" x:Name="media" HorizontalAlignment="Left" Height="430" VerticalAlignment="Top" Width="813" MediaFailed="media_MediaFailed"/>
+        <Button Click="play_Click" x:Name="play" Content="Play" Margin="10,368,643,10" />
+
+    </Grid>
+</Window>
